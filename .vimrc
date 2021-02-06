@@ -30,6 +30,9 @@ Plug 'bling/vim-bufferline'
 Plug 'skywind3000/vim-auto-popmenu'
 Plug 'skywind3000/vim-dict'
 " Plug 'vim-scripts/a.vim'
+" Plug 'ludovicchabant/vim-gutentags'
+" Plug 'skywind3000/gutentags_plus'
+" Plug 'skywind3000/vim-preview'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -105,3 +108,43 @@ set cpt=.,k,w,b
 set completeopt=menu,menuone,noselect
 " no annoying messages below
 set shortmess+=c
+
+" gtags-cscope
+"s：查找C代码符号
+"g：查找本定义
+"c：查找调用本函数的函数
+"t：查找本字符串
+"e：查找本egrep模式
+"f：查找本文件
+"i：查找包含本文件的文件
+"d：查找本函数调用的函数
+" enable gtags module
+" let g:gutentags_modules = ['gtags_cscope']
+"" let g:gutentags_modules = ['ctags', 'gtags_cscope']
+
+" config project root markers.
+" let g:gutentags_project_root = ['.root']
+" let g:gutentags_add_default_project_roots = 0
+
+" disable autoload gtags database
+"" let g:gutentags_auto_add_gtags_cscope = 0
+
+" define the name of tag files
+"" let g:gutentags_ctags_tagfile = '.tags'
+
+" put ctags/gtags files into a folder
+"" let g:gutentags_cache_dir = expand('.tags')
+"" g:gutentags_generate_on_missing = 0
+"
+" change focus to quickfix window after search (optional).
+" let g:gutentags_plus_switch = 1
+
+" preview
+" autocmd FileType qf nnoremap <silent><buffer> p :PreviewQuickfix<cr>
+" autocmd FileType qf nnoremap <silent><buffer> P :PreviewClose<cr>
+
+" a.vim shortcuts
+" :A switch to header/source file in current panel
+" :AS, :AV, open header/source file in a split window
+" :IH switches to file under cursor
+" :IHS, IHV
