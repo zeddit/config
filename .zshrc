@@ -75,7 +75,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk8/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk8/Contents/Home
+export JAVA_HOME=`/usr/libexec/java_home`
 export LLVM_DIR=/opt/local/libexec/llvm-9.0/lib/cmake/llvm
 # /lib/cmake
 export MANPATH=/opt/local/share/man:$MANPATH
