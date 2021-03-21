@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:$HOME/.local/lib/npm/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/zedd/.oh-my-zsh"
 
@@ -68,7 +68,7 @@ ZSH_THEME="xiong-chiamiov-plus"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git npm zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 #source /opt/local/share/tldr-cpp-client/autocomplete/complete.zsh
