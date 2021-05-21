@@ -12,3 +12,5 @@
 [user]
 	name = zeddit
 	email = zhangdai.zedd@gmail.com
+[http]
+    sslVerify = false
